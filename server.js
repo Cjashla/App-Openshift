@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 
 // Ruta que devuelve la hora actual
 app.get("/time", (req, res) => {
-  res.send(`⏰ Current server time: ${new Date().toLocaleString()}`);
+  res.send(`Current server time: ${new Date().toLocaleString()}`);
 });
 
 // Ruta de health check
@@ -22,10 +22,10 @@ app.get("/about", (req, res) => {
   res.json({
     app: "Hello OpenShift App",
     version: "1.1.0",
-    author: "Aplicacion de Integracion de Sistemas y Plataformas"
+    author: "Aplicacion de Plataformas"
   });
 });
 
 app.listen(port, () => {
-  console.log(`✅ App listening on port ${port}`);
+  console.log(`App listening on port ${port}`);
 });
